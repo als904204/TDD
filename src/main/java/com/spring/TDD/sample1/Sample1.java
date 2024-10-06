@@ -22,7 +22,7 @@ public class Sample1 {
             case "+" -> num1 + num2;
             case "-" -> num1 - num2;
             case "*" -> num1 * num2;
-            case "%" -> num1 % num2;
+            case "/" -> num1 / num2;
             default -> throw new InvalidOperatorException();
         };
 
