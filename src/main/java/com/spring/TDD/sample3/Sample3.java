@@ -7,10 +7,8 @@ public class Sample3 {
 
     public static void main(String[] args) {
 
-        CalculatorRequestReader2 reader = new CalculatorRequestReader2();
-        String[] prats = reader.read();
-
-        CalculatorRequest request = new CalculatorRequest(prats);
+        CalculatorRequestReader3 reader = new CalculatorRequestReader3();
+        CalculatorRequest request = reader.read();
 
         long answer = new Calculator().calculate(request.getNum1(), request.getOperator(),
             request.getNum2());
